@@ -266,6 +266,16 @@ watchEffect(()=>{
   
 })
 
+collection
+    .find()
+    .then((data) => {
+      contacts.value = data;
+      props.getDataFromPresent(data);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+
 const editFormData = ref({
   work: "",
   capable: "",
