@@ -1,0 +1,840 @@
+<template>
+
+<!--Primary stakeholder-->
+     <td>
+<button id="dropdownHelperRadioButton" data-dropdown-toggle="dropdownHelperRadio" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+  <p></p>
+  <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+
+<!-- Dropdown menu -->
+<div id="dropdownHelperRadio" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(522.5px, 6119.5px, 0px);">
+    <ul class="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200"  aria-labelledby="dropdownHelperRadioButton">
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-4" name="helper-radio" type="radio" value="" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-4" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>External Client</div>
+                <p id="helper-radio-text-4" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-5" name="helper-radio" type="radio" :value="editFormData.pri_stalk" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-5" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>Internal Client</div>
+                <p id="helper-radio-text-5" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-6" name="helper-radio" type="radio" :value="editFormData.pri_stalk" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-6" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>My Team</div>
+                <p id="helper-radio-text-6" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-7" name="helper-radio" type="radio" :value="editFormData.pri_stalk" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-7" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>3rd Party</div>
+                <p id="helper-radio-text-7" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-8" name="helper-radio" type="radio" :value="editFormData.pri_stalk" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-8" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>Others</div>
+                <p id="helper-radio-text-8" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+    </ul>
+</div>
+</td>
+
+<!--Outcome-->
+<td>
+<button id="dropdownHelperRadioButton2" data-dropdown-toggle="dropdownHelperRadio2" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown radio <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+
+<!-- Dropdown menu -->
+<div id="dropdownHelperRadio2" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(522.5px, 6119.5px, 0px);">
+    <ul class="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHelperRadioButton2">
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-4" name="helper-radio" type="radio" :value="editFormData.outcome" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-4" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>Current Revenue</div>
+                <p id="helper-radio-text-4" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-5" name="helper-radio" type="radio" :value="editFormData.outcome" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-5" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>Future Revenue</div>
+                <p id="helper-radio-text-5" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-6" name="helper-radio" type="radio" :value="editFormData.outcome" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-6" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>Profitabily</div>
+                <p id="helper-radio-text-6" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-6" name="helper-radio" type="radio" :value="editFormData.outcome" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-6" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>Scalability</div>
+                <p id="helper-radio-text-6" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-6" name="helper-radio" type="radio" :value="editFormData.outcome" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-6" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>Customer Satisfaction</div>
+                <p id="helper-radio-text-6" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-6" name="helper-radio" type="radio" :value="editFormData.outcome" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-6" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>Employee Satisfaction</div>
+                <p id="helper-radio-text-6" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-6" name="helper-radio" type="radio" :value="editFormData.outcome" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-6" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>Risk Management</div>
+                <p id="helper-radio-text-6" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-6" name="helper-radio" type="radio" :value="editFormData.outcome" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-6" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>Others</div>
+                <p id="helper-radio-text-6" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+    </ul>
+</div>
+</td>
+
+
+<!--Skills required-->
+<td>
+<button id="dropdownHelperRadioButton3" data-dropdown-toggle="dropdownHelperRadio3" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown radio <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+
+<!-- Dropdown menu -->
+<div id="dropdownHelperRadio3" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(522.5px, 6119.5px, 0px);">
+    <ul class="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHelperRadioButton3">
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-4" name="helper-radio" type="radio" :value="editFormData.skill" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-4" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>Core</div>
+                <p id="helper-radio-text-4" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-5" name="helper-radio" type="radio"  :value="editFormData.skill" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-5" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>Skilled</div>
+                <p id="helper-radio-text-5" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-6" name="helper-radio" type="radio"  :value="editFormData.skill" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-6" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>Expert</div>
+                <p id="helper-radio-text-6" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+    </ul>
+</div>
+</td>
+
+
+
+<!--work Quality-->
+<td>
+<button id="dropdownHelperRadioButton4" data-dropdown-toggle="dropdownHelperRadio4" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown radio <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+
+<!-- Dropdown menu -->
+<div id="dropdownHelperRadio4" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(522.5px, 6119.5px, 0px);">
+    <ul class="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHelperRadioButton4">
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-4" name="helper-radio" type="radio"  :value="editFormData.work_qual" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-4" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>Work is going well</div>
+                <p id="helper-radio-text-4" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-5" name="helper-radio" type="radio" :value="editFormData.work_qual" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-5" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>Work needs Improvement</div>
+                <p id="helper-radio-text-5" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-6" name="helper-radio" type="radio" :value="editFormData.work_qual" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-6" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>Environment/team dynamics impacting work</div>
+                <p id="helper-radio-text-6" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-6" name="helper-radio" type="radio" :value="editFormData.work_qual" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-6" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>Improvement in Progress</div>
+                <p id="helper-radio-text-6" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-6" name="helper-radio" type="radio" :value="editFormData.work_qual" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-6" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>I want to lead improving this work</div>
+                <p id="helper-radio-text-6" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+    </ul>
+</div>
+</td>
+
+
+
+<!--Capability-->
+<td>
+<button id="dropdownHelperRadioButton5" data-dropdown-toggle="dropdownHelperRadio5" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown radio <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+
+<!-- Dropdown menu -->
+<div id="dropdownHelperRadio5" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(522.5px, 6119.5px, 0px);">
+    <ul class="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHelperRadioButton5">
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-4" name="helper-radio" type="radio" :value="editFormData.capable" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-4" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>I am capable and confident</div>
+                <p id="helper-radio-text-4" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-5" name="helper-radio" type="radio" :value="editFormData.capable" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-5" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>This work offers me an opportunity to grow</div>
+                <p id="helper-radio-text-5" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-6" name="helper-radio" type="radio" :value="editFormData.capable" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-6" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>This is a stretch for me</div>
+                <p id="helper-radio-text-6" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-6" name="helper-radio" type="radio" :value="editFormData.capable" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-6" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>My talent is not aligned with this work</div>
+                <p id="helper-radio-text-6" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+    </ul>
+</div>
+</td>
+
+
+<!--Interest-->
+<td>
+<button id="dropdownHelperRadioButton6" data-dropdown-toggle="dropdownHelperRadio6" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown radio <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+
+<!-- Dropdown menu -->
+<div id="dropdownHelperRadio6" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(522.5px, 6119.5px, 0px);">
+    <ul class="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHelperRadioButton6">
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-4" name="helper-radio" type="radio" :value="editFormData.interest" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-4" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>I am capable and confident</div>
+                <p id="helper-radio-text-4" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-5" name="helper-radio" type="radio" :value="editFormData.interest" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-5" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>This work offers me an opportunity to grow</div>
+                <p id="helper-radio-text-5" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-6" name="helper-radio" type="radio" :value="editFormData.interest" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-6" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>This is a stretch for me</div>
+                <p id="helper-radio-text-6" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <div class="flex items-center h-5">
+              <input id="helper-radio-6" name="helper-radio" type="radio" :value="editFormData.interest" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          </div>
+          <div class="ml-2 text-sm">
+              <label for="helper-radio-6" class="font-medium text-gray-900 dark:text-gray-300">
+                <div>My talent is not aligned with this work</div>
+                <p id="helper-radio-text-6" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some helpful instruction goes over here.</p>
+              </label>
+          </div>
+        </div>
+      </li>
+    </ul>
+</div>
+</td>
+
+
+<!--work design-->
+
+<td>
+
+<button id="dropdownSearchButton7" data-dropdown-toggle="dropdownSearch7" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown search <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+
+<!-- Dropdown menu -->
+<div id="dropdownSearch7" class="z-10 hidden bg-white rounded-lg shadow w-60 dark:bg-gray-700">
+    <div class="p-3">
+    <ul class="h-48 px-3 pb-3 overflow-y-auto text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownSearchButton7">
+      <li>
+        <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <input id="checkbox-item-11" type="checkbox" :value="editFormData.work_design" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          <label for="checkbox-item-11" class="w-full ml-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300">Bonnie Green</label>
+        </div>
+      </li>
+      <li>
+        <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+            <input checked id="checkbox-item-12" type="checkbox" :value="editFormData.work_design" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+            <label for="checkbox-item-12" class="w-full ml-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300">Jese Leos</label>
+          </div>
+      </li>
+      <li>
+        <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <input id="checkbox-item-13" type="checkbox" :value="editFormData.work_design" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          <label for="checkbox-item-13" class="w-full ml-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300">Michael Gough</label>
+        </div>
+      </li>
+      <li>
+        <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <input id="checkbox-item-14" type="checkbox" :value="editFormData.work_design" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          <label for="checkbox-item-14" class="w-full ml-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300">Robert Wall</label>
+        </div>
+      </li>
+      <li>
+        <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <input id="checkbox-item-15" type="checkbox" :value="editFormData.work_design" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          <label for="checkbox-item-15" class="w-full ml-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300">Joseph Mcfall</label>
+        </div>
+      </li>
+      <li>
+        <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <input id="checkbox-item-16" type="checkbox" :value="editFormData.work_design" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          <label for="checkbox-item-16" class="w-full ml-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300">Leslie Livingston</label>
+        </div>
+      </li>
+            <li>
+        <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+          <input id="checkbox-item-17" type="checkbox" :value="editFormData.work_design" @input="handleEditFormChange" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+          <label for="checkbox-item-17" class="w-full ml-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300">Roberta Casas</label>
+        </div>
+      </li>
+    </ul>
+    
+</div>
+</div>
+
+</td>
+</template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<template>
+  <nav
+    class="fixed shadow dark:shadow-slate-700 top-0 z-50 w-full bg-white border-b border-gray-200  dark:border-gray-700">
+    <div class="px-3 py-3 lg:px-5 lg:pl-3">
+      <div class="flex items-center justify-between">
+        <h1 class="ml-2 cursor-pointer text-lg font-extrabold md:text-xl lg:text-2xl  tracking-wider truncate">Role
+          Alignment &amp; Development Ambition Record (RADAR) 2023</h1>
+        <div class="flex items-center">
+          <div class="flex items-center justify-center ml-3 gap-2 sm:gap-4">
+            <button type="button"
+              class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600 w-8"
+              aria-expanded="false" data-dropdown-toggle="dropdown-user">
+              <span class="sr-only">Open user menu</span>
+              <img referrerpolicy="no-referrer" class="rounded-full" src="" alt="user photo">
+            </button>
+            <div
+              class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600"
+              id="dropdown-user"
+              style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(1483.2px, 54.4px, 0px);"
+              data-popper-placement="bottom">
+              <div class="px-4 py-3" role="none">
+                <p class="text-sm text-gray-900 dark:text-white" role="none">{{ us_name }}</p>
+                <p class="text-sm font-medium text-gray-900 truncate dark:text-gray-300" role="none">{{ us_email }}</p>
+              </div>
+              <ul class="py-1" role="none">
+                <li>
+                  <button @click=logout()
+                    class="w-full block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                    role="menuitem">
+                    <p class="text-left">Sign out</p>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div>
+<div class="mt-14 md:p-4 p-2 flex flex-col">
+  <div class="flex justify-between p-4 items-start gap-2 flex-col md:flex-row">
+    <h1 class="font-bold text-black dark:text-gray-300"> Last Changed at: <span class="dark:text-white text-gray-500 capitalize font-semibold">{{ date1 }}</span>
+    </h1>
+    <div class="flex xl:gap-2 font-bold md:items-end dark:text-gray-300 flex-col xl:flex-row">
+      <p class="capitalize"> Total hours last 3 Months: <span class="dark:text-white text-gray-500 ml-auto">0 Hours</span>
+      </p>
+      <p class="capitalize"> Total hours next 3 Months: <span class="dark:text-white text-gray-500">0 Hours</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- <div>
+  <div class="flex p-4 items-start justify-between gap-2 text-black dark:text-white flex-col md:flex-row">
+    <h1 class="text-2xl font-bold leading-5"> Past / Continuing Stage: <span class="data-table-sub-heading"> Work that you have been doing and may or may not keep doing </span>
+    </h1>
+  </div>
+
+  <div class="mt-10">
+    <div class="overflow-x-auto">
+      <form @submit.prevent="handleEditFormSubmit">
+        <table v-if="contacts.length > 0" class="w-11/12 mx-auto text-sm text-left text-gray-500 bg-gray-50 rounded-lg ">
+          <thead class="text-xs text-gray-700 uppercase bg-gray-200  ">
+            <tr>
+              <th scope="col" class="px-4 py-3">Work to be done</th>
+              <th scope="col" class="px-4 py-3">Hours last 3 months</th>
+              <th scope="col" class="px-4 py-3">Hours next 3 months</th>
+              <th scope="col" class="px-4 py-3">Primary stakeholder</th>
+              <th scope="col" class="px-4 py-3">Outcome</th>
+              <th scope="col" class="px-4 py-3">Skills required</th>
+              <th scope="col" class="px-4 py-3">Work quality</th>
+              <th scope="col" class="px-4 py-3">Capability</th>
+              <th scope="col" class="px-4 py-3">Interest</th>
+              <th scope="col" class="px-4 py-3">Work redesign</th>
+              <th scope="col" class="px-4 py-3">Comments</th>
+              <th scope="col" class="px-4 py-3">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <template v-for="contact in contacts" :key="contact._id">
+              <template v-if="editContactId === contact._id">
+                <EditableRow :editFormData="editFormData" :handleEditFormChange="handleEditFormChange"
+                  :handleCancelClick="handleCancelClick" />
+              </template>
+              <template v-else>
+                <ReadOnlyRow :contact="contact" :handleEditClick="handleEditClick"
+                  :handleDeleteClick="handleDeleteClick" />
+              </template>
+            </template>
+          </tbody>
+        </table>
+      </form>
+      <form @submit.prevent="handleAddFormSubmit" class="flex justify-center mt-5">
+        <button type="submit"
+          class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300  font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+          <span v-if="contacts.length > 0">Add Row</span>
+          <span v-else>Create New Table</span>
+        </button>
+      </form>
+    </div>
+  </div>
+  </div> -->
+  </div>
+  </div>
+</template>
+
+<script setup>
+
+import { ref } from "vue";
+import { onMounted } from 'vue'
+import {
+
+  initDropdowns,
+  initFlowbite
+} from 'flowbite'
+
+
+// initialize components based on data attribute selectors
+onMounted(() => {
+
+  initDropdowns();
+  initFlowbite();
+
+})
+
+
+const { app } = useMyRealmApp();
+
+var us_email = app.currentUser._profile.data.email;
+var us_name = app.currentUser._profile.data.name;
+var us_photo = app.currentUser._profile.picture;
+
+// const mongo = app.currentUser?.mongoClient("mongodb-atlas");
+// const collection = mongo?.db("radar").collection("table1");
+// // functions
+// const contacts = ref([])
+let date1 = new Date();
+
+
+
+let text=5;
+for (let i = 0; i < contacts.length; i++) {
+  text += contacts.hour_last;
+}
+
+console.log(text);
+
+
+const logout = () => {
+  app.currentUser.logOut();
+  navigateTo("/");
+};
+
+const editFormData = ref({
+  work: "",
+  h_last: "",
+  h_next: "",
+  pri_stalk: "",
+  outcome: "",
+  skill: "",
+  work_qual: "",
+  capable: "",
+  interest: "",
+  work_design: "",
+  comments: "",
+})
+const editContactId = ref(null)
+const handleEditFormChange = (event) => {
+  event.preventDefault();
+  const fieldName = event.target.getAttribute("name");
+  const fieldValue = event.target.value;
+  const newFormData = { ...editFormData._rawValue };
+  newFormData[fieldName] = fieldValue;
+  editFormData.value = newFormData
+};
+const handleAddFormSubmit = (event) => {
+  event.preventDefault();
+  const newContact = {
+    work: "",
+    hour_last: "",
+    hour_next: "",
+    primary_stakeholder: "",
+    outcome: "",
+    skill_required: "",
+    work_quality: "",
+    capability: "",
+    interest: "",
+    work_design: "",
+    comments: "",
+    user_id: app.currentUser.id,
+  };
+  collection
+    .insertOne(newContact)
+    .then((data) => {
+      console.log(data);
+      consoleData();
+
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+
+  // contacts.value = [ ...contacts.value ];
+  // const lastElement = contacts.value[contacts.value.length - 1]
+  // handleEditClick(newContact)
+};
+const handleEditFormSubmit = () => {
+  // event.preventDefault();
+  const editedContact = {
+    work: editFormData.value.work,
+    hour_last: editFormData.value.h_last,
+    hour_next: editFormData.value.h_next,
+    primary_stakeholder: editFormData.value.pri_stalk,
+    outcome: editFormData.value.outcome,
+    skill_required: editFormData.value.skill,
+    work_quality: editFormData.value.work_qual,
+    capability: editFormData.value.capable,
+    interest: editFormData.value.interest,
+    work_design: editFormData.value.work_design,
+    comments: editFormData.value.comments,
+  };
+  console.log('omg', editContactId.value);
+
+  collection
+    .updateOne({ _id: editContactId.value }, { $set: editedContact })
+    .then((data) => {
+      console.log(data);
+      consoleData();
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+
+  // console.log(editedContact)
+  // const newContacts = [...contacts.value];
+  // const index = contacts.value.findIndex((contact) => contact._id === editContactId.value);
+  // console.log('index', index)
+  // newContacts[index] = editedContact;
+  // console.log('newContacts', newContacts)
+  // contacts.value = newContacts
+  editContactId.value = null;
+};
+const handleEditClick = (contact) => {
+  console.log('contact', contact)
+  editContactId.value = contact._id;
+  const formValues = {
+    id: contact._id,
+    work: contact.work,
+    h_last: contact.hour_last,
+    h_next: contact.hour_next,
+    primary_stalk: contact.primary_stakeholder,
+    outcome: contact.outcome,
+    skill: contact.skill_required,
+    work_qual: contact.work_quality,
+    capable: contact.capability,
+    interest: contact.interest,
+    work_design: contact.work_design,
+    comments: contact.comments,
+  };
+  editFormData.value = formValues;
+};
+const handleCancelClick = () => {
+  // setEditContactId(null);
+  editContactId.value = null
+};
+const handleDeleteClick = (id) => {
+  // const index = contacts.findIndex(contact => contact._id === contactId)
+  // const index = contacts.value.findIndex((contact) => contact._id === contactId);
+  // contacts.value.splice(index, 1);
+
+  console.log(id)
+  collection
+    .deleteOne({
+      _id: id,
+    })
+    .then((data) => {
+      console.log(data);
+      consoleData();
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+};
+const consoleData = () => {
+  collection
+    .find()
+    .then((data) => {
+      console.log(data);
+      contacts.value = data;
+
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+}
+
+consoleData();
+
+
+
+
+</script>
+
+<style></style>
